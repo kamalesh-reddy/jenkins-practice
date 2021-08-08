@@ -11,7 +11,7 @@ job('eNodejs-Docker') {
     steps {
         dockerBuildAndPublish {
             repositoryName('reddysdocker/nodejs-jenkins')
-            tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
+            tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
             forcePull(false)
             createFingerprints(false)
