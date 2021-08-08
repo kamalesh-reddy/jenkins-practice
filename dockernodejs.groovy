@@ -6,7 +6,7 @@ job('eNodejs-Docker') {
         }
     }
     triggers {
-        scm()
+        githubPush()
     }
     steps {
         dockerBuildAndPublish {
