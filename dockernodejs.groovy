@@ -1,6 +1,6 @@
 job('eNodejs-Docker') {
     scm {
-        git('git@git') { node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/kamalesh-reddy/NodeJS-Jenkins.git') { node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('kamalesh reddy')
             node / gitConfigEmail('kamaleshreddy.v@gmail.com')
         }
